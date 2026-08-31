@@ -156,3 +156,37 @@ const getUniqueChars = (str) => {
 }
 console.log(getUniqueChars("abcdef"));
 
+
+// Q18: Find the sum of all even numbers in an array
+const sumOfEvenNumbers = (arr) => {
+    let count = 0;
+
+     for(let i = 0; i < arr.length; i++) {
+        if(arr[i] % 2 === 0) {
+            count += arr[i]
+        } 
+     }
+     return count;
+}
+
+console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6]));
+console.log(sumOfEvenNumbers([1, 3, 5])); 
+
+
+// Q19: Find the second largest number in an array
+const secondLargest = (arr) => {
+    let maxNum = arr[0];
+    let secondMaxNum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > maxNum) {
+            secondMaxNum = maxNum;
+            maxNum = arr[i];
+        } else if (arr[i] > secondMaxNum) {
+            secondMaxNum = arr[i];
+        }
+    }
+    return secondMaxNum;
+}
+console.log(secondLargest([3, 7, 2, 9, 4]));
+
