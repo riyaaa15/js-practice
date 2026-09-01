@@ -190,3 +190,10 @@ const secondLargest = (arr) => {
 }
 console.log(secondLargest([3, 7, 2, 9, 4]));
 
+
+// Q20: Flatten a deeply nested array
+const flattenArray = (arr) => {
+    return arr.flat(Infinity);
+}
+
+console.log(flattenArray([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]));
