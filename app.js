@@ -197,3 +197,11 @@ const flattenArray = (arr) => {
 }
 
 console.log(flattenArray([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]));
+
+
+// Q21: Check if one string contains another string
+const isSubstring = (str1, str2) => {
+    return str1.includes(str2);
+}
+
+console.log(isSubstring("hello world", "bye"));
