@@ -205,3 +205,12 @@ const isSubstring = (str1, str2) => {
 }
 
 console.log(isSubstring("hello world", "bye"));
+
+
+
+const removeSpace = (str) => {
+    return str.split(" ").join("");
+}
+
+console.log(removeSpace("h e l l o"));
+console.log(removeSpace("i love js"));
