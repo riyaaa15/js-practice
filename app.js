@@ -207,7 +207,7 @@ const isSubstring = (str1, str2) => {
 console.log(isSubstring("hello world", "bye"));
 
 
-
+// Q22: Remove space from a string
 const removeSpace = (str) => {
     return str.split(" ").join("");
 }
