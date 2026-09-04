@@ -214,3 +214,18 @@ const removeSpace = (str) => {
 
 console.log(removeSpace("h e l l o"));
 console.log(removeSpace("i love js"));
+
+
+// Q23: capitalize first letter of every word in a sentence
+const capitalizeWords = (str) => {
+    let words = str.split(" ");
+
+    for(let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+    }
+
+    return words.join(" ");
+}
+
+console.log(capitalizeWords("hellop world"));
+console.log(capitalizeWords("i love js"));
