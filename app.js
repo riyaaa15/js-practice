@@ -229,3 +229,27 @@ const capitalizeWords = (str) => {
 
 console.log(capitalizeWords("hellop world"));
 console.log(capitalizeWords("i love js"));
+
+
+ // Q24: sum of numbers within a range
+const sumRange = (start, end) => {
+    let result = 0;
+
+    for(let i = start; i <= end; i++ ) {
+        result += i
+    }
+
+     return result;
+}
+
+console.log(sumRange(1, 5));
+
+
+// Q25: check if a character is a vowel
+const isVowel = (char) => {
+    let letter = char.toLowerCase();
+
+    return ("aeiou".includes(letter));
+}
+
+console.log(isVowel("U"));
