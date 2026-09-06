@@ -253,3 +253,17 @@ const isVowel = (char) => {
 }
 
 console.log(isVowel("U"));
+
+
+//Q26: convert array of strings to object with lengths as values
+const arrayToObject = (arr) => {
+    let obj = {};
+
+    for(let i=0; i < arr.length; i++) {
+        obj[arr[i]] = arr[i].length;
+    }
+
+    return obj;
+}
+
+console.log(arrayToObject(["cat", "elephant", "dog"]));
