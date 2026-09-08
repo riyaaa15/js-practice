@@ -282,3 +282,31 @@ const chunkArray = (arr, num) => {
 }
 
 console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 2));
+
+
+//Q28: generate array of numbers within a range
+const range = (start, end) => {
+    let arr = [];
+
+    for(let i = start; i <= end; i++) {
+        arr.push(i);
+    }
+
+    return arr;
+}
+
+console.log(range(3, 7));
+
+
+// Q29: convert sentence to title case
+const titleCase = (sentence) => {
+     let words = sentence.split(" ");
+
+    for(let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1).toLowerCase();
+    }
+
+    return words.join(" ");
+}
+
+console.log(titleCase("jAVAscript IS fun"));
