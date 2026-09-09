@@ -310,3 +310,33 @@ const titleCase = (sentence) => {
 }
 
 console.log(titleCase("jAVAscript IS fun"));
+
+
+//  Q30: find most frequent character in a string
+const mostFrequentChar = (str) => {
+    let freq = {};
+
+    for(let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (freq[char]) {
+            freq[char] = freq[char] + 1;
+        } else {
+            freq[char] = 1;
+        }
+    }
+
+    let maxChar = "";
+    let maxCount = 0;
+
+    for(let char in freq) {
+        if (freq[char] > maxCount) {
+            maxCount = freq[char];
+            maxChar = char;
+        }
+    }
+
+    return maxChar;
+    
+}
+
+console.log(mostFrequentChar("banana"));
