@@ -359,3 +359,20 @@ console.log(isLeapYear(2000));
 console.log(isLeapYear(1900));   
 console.log(isLeapYear(2024));   
 console.log(isLeapYear(2028));
+
+
+// Q32: implement caesar cipher (letter shifting)
+const caesarCipher = (str, shift) => {
+    let result = "";
+
+    for(let i = 0; i < str.length; i++) {
+        let code = str.charCodeAt(i);
+        let newCode = ((code - 97 + shift) % 26) + 97;
+        result += String.fromCharCode(newCode);
+    }
+
+    return result;
+}
+
+console.log(caesarCipher("abc", 1));  
+console.log(caesarCipher("xyz", 2));
