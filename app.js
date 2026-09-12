@@ -387,3 +387,20 @@ const checkAge = (age) => {
 }
 
 console.log(checkAge(25));
+
+// Q34: get grades based on marks
+const getGrade = (marks) => {
+    if(marks >= 90) {
+        return "A"
+    } else if(marks >= 75){
+        return "B"
+    } else if(marks >= 50) {
+        return "C"
+    } else {
+        return "F"
+    }
+}
+
+console.log(getGrade(95));
+console.log(getGrade(60));
+console.log(getGrade(30));
