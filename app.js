@@ -376,3 +376,14 @@ const caesarCipher = (str, shift) => {
 
 console.log(caesarCipher("abc", 1));  
 console.log(caesarCipher("xyz", 2));
+
+// Q33: check if a person is adult or not
+const checkAge = (age) => {
+    if(age >= 18) {
+        return "Adult"
+    }else {
+        return "Minor"
+    }
+}
+
+console.log(checkAge(25));
