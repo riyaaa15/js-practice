@@ -404,3 +404,14 @@ const getGrade = (marks) => {
 console.log(getGrade(95));
 console.log(getGrade(60));
 console.log(getGrade(30));
+
+
+// Q35: Check if a sentence is a pangram
+const isPangram = (str) => {
+    let newStr = str.toLowerCase().split(' ').join('');
+    let unique = new Set(newStr.split(''));
+    return unique.size === 26;
+};
+
+console.log(isPangram("Hello world"));
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));
