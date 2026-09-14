@@ -415,3 +415,15 @@ const isPangram = (str) => {
 
 console.log(isPangram("Hello world"));
 console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+
+
+// Q36: truncate String with eliipsis if too long
+const truncateString = (str, maxLength) => {
+    if( str.length > maxLength) {
+        return str.slice(0, maxLength) + "...";
+    } else {
+        return str;
+    }
+}
+
+console.log(truncateString("Hello world", 5));
