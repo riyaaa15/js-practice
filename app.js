@@ -479,3 +479,19 @@ const digitInReverse = (num) => {
 }
 
 digitInReverse(123);
+
+// Q41: print even digit sum from a number
+const evenDigitSum = (num) => {
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        if(digit % 2 === 0) {
+            sum += digit;
+        }
+        num = Math.floor(num / 10);
+    }   
+    return sum;
+}
+
+console.log(evenDigitSum(12345));
+
