@@ -427,3 +427,55 @@ const truncateString = (str, maxLength) => {
 }
 
 console.log(truncateString("Hello world", 5));
+
+
+// Q37: sum of even numbers b/w 1 to 10 (with tracing)
+const sumEvenOneToTen = () => {
+    let sum = 0;
+    for(let i = 1; i <= 10; i++) {
+        if(i % 2 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+console.log(sumEvenOneToTen());
+
+
+// Q38: Sum of odd numbers b/w 1 to 10 (with tracing)
+const sumOddOneToTen = () => {
+    let sum = 0;
+    for(let i = 1; i <= 10; i++) {
+        if(i % 2 !== 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+console.log(sumOddOneToTen());
+
+// Q39: sum of even numbers b/w 20 to 10
+const sumEvenTwentyToTen = () => {
+    let sum = 0;
+    for(let i = 20; i >= 10; i--) {
+        if( i % 2 === 0){
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+console.log(sumEvenTwentyToTen());
+
+// Q40: print each digit in a number (in reverse order)
+const digitInReverse = (num) => {
+    while (num > 0) {
+        let digit = num % 10;
+        console.log(digit);
+        num = Math.floor(num / 10);
+    }   
+}
+
+digitInReverse(123);
