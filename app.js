@@ -495,3 +495,22 @@ const evenDigitSum = (num) => {
 
 console.log(evenDigitSum(12345));
 
+// Q41: swapping two numbers
+const swapNum = (num1, num2) => {
+    let temp = num1;
+    num1 = num2;
+    num2 = temp;
+    console.log(num1, num2);
+}
+
+swapNum(2, 5);
+
+// Q42: Swapping two numbers without temp
+const swapNums = (num1, num2) => {
+    num1 += num2;
+    num2 = num1 - num2;
+    num1 = num1 - num2;
+    console.log(num1, num2);
+}
+
+swapNums(2, 5);
