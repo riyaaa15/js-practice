@@ -514,3 +514,32 @@ const swapNums = (num1, num2) => {
 }
 
 swapNums(2, 5);
+
+
+// Q43: Count how many digits are present in a number
+const countDigits = (num) => {
+    let count = 0;
+    while( num > 0) {
+        count++;
+        num = Math.floor(num / 10);
+    }
+    return count;
+}
+
+console.log(countDigits(6512318));
+
+
+// Q44: count even digit in a number
+const countEvenDigit = (num) => {
+    let count = 0;
+    while(num > 0) {
+        let digit = num % 10;
+        if(digit % 2 === 0) {
+            count++;
+        }
+        num = Math.floor(num / 10);
+    }
+    return count;
+}
+
+console.log(countEvenDigit(6512318));
