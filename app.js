@@ -559,7 +559,7 @@ const reverseNumber = (num) => {
 console.log(reverseNumber(123456));  
 
 
-// Q46: Check if the num is reverse or not 
+// Q46: Check if the num is palindrome or not 
 const isPalindromeNum = (num) => {
     let reversed = reverseNumber(num);
     return num === reversed;
