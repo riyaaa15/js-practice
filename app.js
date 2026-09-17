@@ -88,10 +88,10 @@ console.log(countChar("banana", "a"));
 
 
 // Q10: Check if a string is a palindrome
-const isPalindrome = (str) => {
+const isPalindromeStr = (str) => {
     return str === str.split('').reverse().join('');
 }
-console.log(isPalindrome("madam"));
+console.log(isPalindromeStr("madam"));
 
 
 // Q11: Sum all numbers in an array
@@ -543,3 +543,26 @@ const countEvenDigit = (num) => {
 }
 
 console.log(countEvenDigit(6512318));
+
+
+// Q45: reverse the number
+const reverseNumber = (num) => {
+    let reversed = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = Math.floor(num / 10)
+    }
+    return reversed;
+}
+
+console.log(reverseNumber(123456));  
+
+
+// Q46: Check if the num is reverse or not 
+const isPalindromeNum = (num) => {
+    let reversed = reverseNumber(num);
+    return num === reversed;
+}
+
+console.log(isPalindromeNum(25252));  
