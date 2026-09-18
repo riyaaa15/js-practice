@@ -566,3 +566,18 @@ const isPalindromeNum = (num) => {
 }
 
 console.log(isPalindromeNum(25252));  
+
+
+const countOddNumbers = (arr) => {
+    let count = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] % 2 !== 0) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countOddNumbers([2, 5, 7, 8, 10, 13, 4]));
