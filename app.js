@@ -594,4 +594,4 @@ const isPalindromeNums = () => {
     }
 }
 
-console.log(isPalindromeNums());
+printPalindromeNums(); 
