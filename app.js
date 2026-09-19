@@ -568,6 +568,7 @@ const isPalindromeNum = (num) => {
 console.log(isPalindromeNum(25252));  
 
 
+// Q47: Count odd numbers in an array
 const countOddNumbers = (arr) => {
     let count = 0;
 
@@ -581,3 +582,16 @@ const countOddNumbers = (arr) => {
 }
 
 console.log(countOddNumbers([2, 5, 7, 8, 10, 13, 4]));
+
+
+// Q48: palindorme numbers between 10 to 200
+const isPalindromeNums = () => {
+    for(let i = 10; i <= 200; i++) {
+        let reversed = reverseNumber(i);
+        if( i === reversed) {
+            console.log(i);
+        }
+    }
+}
+
+console.log(isPalindromeNums());
