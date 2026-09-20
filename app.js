@@ -594,4 +594,32 @@ const isPalindromeNums = () => {
     }
 }
 
-printPalindromeNums(); 
+isPalindromeNums(); 
+
+
+// Q49: calculate power of number
+const numberPower = (base, exponent) => {
+    let result = 1;
+    for(let i = 0; i < exponent; i++) {
+        result *= base;
+    }
+
+    return result;
+}
+
+console.log(numberPower(2, 3));
+
+
+// Q50: calculate square of the digit in a number
+const squareOfNumber = (num) => {
+    while (num > 0) {
+        let digit = num % 10;
+        if (digit % 2 === 0) {
+            let square = digit * digit;
+            console.log(square);
+        }
+        num = Math.floor(num / 10);   // ab if ke bahar, hamesha chalega
+    }
+}
+
+squareOfNumber(1237);
