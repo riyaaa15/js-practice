@@ -610,7 +610,7 @@ const numberPower = (base, exponent) => {
 console.log(numberPower(2, 3));
 
 
-// Q50: calculate square of the digit in a number
+// Q50: calculate square of the even digit in a number
 const squareOfNumber = (num) => {
     while (num > 0) {
         let digit = num % 10;
