@@ -623,3 +623,18 @@ const squareOfNumber = (num) => {
 }
 
 squareOfNumber(1237);
+
+
+// Q51: calcualte cube of every digit if digit id odd in a number
+const cubeOfDigit = (num) => {
+    while (num > 0) {
+        let digit = num % 10;
+        if (digit % 2 !== 0) {
+            let cubes = digit * digit * digit;
+            console.log(cubes);
+        }
+        num = Math.floor(num / 10);
+    }
+}
+
+cubeOfDigit(12345);
