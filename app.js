@@ -625,7 +625,7 @@ const squareOfNumber = (num) => {
 squareOfNumber(1237);
 
 
-// Q51: calcualte cube of every digit if digit id odd in a number
+// Q51: calculate cube of every digit if digit id odd in a number
 const cubeOfDigit = (num) => {
     while (num > 0) {
         let digit = num % 10;
@@ -638,3 +638,19 @@ const cubeOfDigit = (num) => {
 }
 
 cubeOfDigit(12345);
+
+
+// Q52: sum of square of each digit if digit id even in a number
+const evenSquareSum = (num) => {
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        if (digit % 2 === 0) {         // sirf even digit check karo
+            sum += digit * digit;       // uska square add karo
+        }
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
+
+console.log(evenSquareSum(12345));
