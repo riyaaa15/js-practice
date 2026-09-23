@@ -654,3 +654,27 @@ const evenSquareSum = (num) => {
 }
 
 console.log(evenSquareSum(12345));
+
+
+// Q53: print divisors of 10
+const pritnDivisors = () => {
+    for(let i = 1; i <= 10; i++) {
+        if(10 % i === 0) {
+            console.log(i);
+        }
+    }
+}
+
+pritnDivisors();
+
+
+// Q54: Numbers between 1 to 30 which is divisible by 3 and 9
+const divisibleNumber = () => {
+    for(let i = 1; i <= 30; i++) {
+        if(i % 3 === 0 && i % 9 === 0) {
+            console.log(i);
+        }
+    }
+}
+
+divisibleNumber();
