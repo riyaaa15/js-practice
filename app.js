@@ -667,14 +667,29 @@ const pritnDivisors = () => {
 
 pritnDivisors();
 
-
-// Q54: Numbers between 1 to 30 which is divisible by 3 and 9
-const divisibleNumber = () => {
-    for(let i = 1; i <= 30; i++) {
-        if(i % 3 === 0 && i % 9 === 0) {
-            console.log(i);
+// Q54: numbers between 1-20 divisible by 2 and 4
+const divisibleNum = () => {
+    let result = [];
+    for(let i = 1; i <= 20; i++) {
+        if( i % 2 === 0 && i % 4 === 0) {
+            result.push(i);
         }
     }
+
+    return result;
 }
 
-divisibleNumber();
+console.log(divisibleNum());
+
+// Q55:  sum of numbers b/w 20-60 divisible by 11
+const divisibleSum = () => {
+    let sum = 0;
+    for( let i = 20; i <= 60; i++) {
+        if( i % 11 === 0) {
+            sum += i
+        }
+    }
+    return sum;
+}
+
+console.log(divisibleSum());
