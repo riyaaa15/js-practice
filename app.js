@@ -693,3 +693,83 @@ const divisibleSum = () => {
 }
 
 console.log(divisibleSum());
+
+// Q56: Tracing for perfect no 28 and 6
+const isPerfect = (num) => {
+    let sum = 0;
+    for(let i = 1; i < num; i++) {
+        if( num % i === 0) {
+            sum += i;
+            console.log("i =", i, "sum =", sum);
+        }
+    }
+
+    return sum === num;
+}
+
+console.log(isPerfect(28));
+console.log(isPerfect(6));
+
+// Q57: extract digit in a num if digit is even then factorial
+const EvenNumFactorial = (num) => {
+
+    while(num > 0) {
+        let digit = num % 10;
+
+        if(digit % 2 === 0) {
+            let factorial = 1;
+
+            for(let i = 1; i <= digit; i++) {
+                factorial *= i;
+            }
+
+            console.log(digit + "! =", factorial);
+        }
+
+        num = Math.floor(num / 10);
+    }
+}
+
+EvenNumFactorial(1234);
+
+// Q58: Calculate sum of factorial of odd digit in a number
+const sumOddFactorial = (num) => {
+    let sum = 0;
+    
+    while (num > 0) {
+        let digit = num % 10; 
+
+       
+        if (digit % 2 !== 0) {
+            let factorial = 1;
+            
+            for (let i = 1; i <= digit; i++) {
+                factorial *= i;
+            }
+            sum += factorial;
+        }
+        
+        num = Math.floor(num / 10);
+    }
+
+    console.log("Sum of odd factorials is:", sum);
+    return sum;
+};
+
+sumOddFactorial(1234); 
+
+
+// Q59: add two nums then check their sum is even or odd
+const addTwoNums = (a, b) => {
+    return a + b;
+}
+
+const checkAdditionType = (a, b) => {
+    let sum = addTwoNums(a, b);
+    return isEven(sum) ? "Even" : "Odd";
+}
+
+console.log(checkAdditionType(2, 4)); 
+
+
+
