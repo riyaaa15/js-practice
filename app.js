@@ -772,4 +772,39 @@ const checkAdditionType = (a, b) => {
 console.log(checkAdditionType(2, 4)); 
 
 
+// Q54: sum of even digits, then square the result
+const sumOfEvenDigits = (num) => {
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        if (digit % 2 === 0) {
+            sum += digit;
+        }
+        num = Math.floor(num / 10);
+    }
+    return sum;
+};
 
+const SquareOfEvenSum = (num) => {
+    let sum = sumOfEvenDigits(num);
+    return sum * sum;
+}
+
+console.log(SquareOfEvenSum(12345));
+
+// Q55: factorial of each digit, sum them all
+const sumOfDigitFactorial = (num) => {
+    let sum = 0;
+    while(num > 0) {
+        let digit = num % 10;
+        let factorial = 1;
+        for (let i = 1; i <= digit; i++) {
+            factorial *= i;
+        }
+        sum += factorial;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+};
+
+console.log(sumOfDigitFactorial(234));
