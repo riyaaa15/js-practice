@@ -808,3 +808,22 @@ const sumOfDigitFactorial = (num) => {
 };
 
 console.log(sumOfDigitFactorial(234));
+
+// Q56:  check number is Strong Number or not
+const isStrongNumber = (num) => {
+    let sum = sumOfDigitFactorial(num);
+    return sum === num;
+}
+
+console.log(isStrongNumber(145));
+
+// Q57: print the strong number between 1 to 1000
+const printStrongNumbers = () => {
+    for(let i = 1; i <= 1000; i++) {
+        if (isStrongNumber(i)) {
+            console.log(i);
+        }
+    }
+}
+
+printStrongNumbers();
