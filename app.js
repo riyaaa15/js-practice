@@ -827,3 +827,36 @@ const printStrongNumbers = () => {
 }
 
 printStrongNumbers();
+
+// Q58: special two digit number
+const specialTwoDigitNumber = (num) => {
+    let original = num;
+    let sum = 0;
+    let product = 1;
+
+    while(num > 0) {
+        let digit = num % 10;
+         sum += digit
+         product *= digit
+         num = Math.floor(num / 10);
+    }
+
+    if( sum + product === original) {
+            return true;
+    }
+    return false;
+}
+
+console.log(specialTwoDigitNumber(59));
+
+
+// Q59: special number b/w 10 to 100
+const printSpeciaNumber = () => {
+    for(let i = 10; i <= 100; i++) {
+        if(specialTwoDigitNumber(i)) {
+            console.log(i);
+        }
+    }
+}
+
+printSpeciaNumber();
