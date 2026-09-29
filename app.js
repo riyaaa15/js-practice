@@ -861,7 +861,6 @@ const printSpeciaNumber = () => {
 
 printSpeciaNumber();
 
-
 // Q60: check Number if prime or not 
 const primeNumber = (num) => {
     for(let i = 2; i < num; i++) {
@@ -873,7 +872,6 @@ const primeNumber = (num) => {
 }
 
 console.log(primeNumber(13));
-
 
 // Q61: prime number b/w 1 to 50
 const primeNumbers = () => {
