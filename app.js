@@ -896,3 +896,19 @@ const primeNumbers = () => {
 }
 
 primeNumbers();
+
+// Q62: Fibonacci number series up to 10 digits
+const fibonacciNum = () => {
+    let a = 0;
+    let b = 1;
+
+    for(let i = 0; i <= 10; i++) {
+        console.log(a);
+
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+}
+
+fibonacciNum();
