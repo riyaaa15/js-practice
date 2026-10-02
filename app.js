@@ -912,3 +912,31 @@ const fibonacciNum = () => {
 }
 
 fibonacciNum();
+
+// Q63: Print Armstrong no in 1 to 1000
+const armstrongNum = () => {
+    for( let i = 1; i <= 1000; i++) {
+        let count = 0;
+        let sum = 0;
+        let temp = i;
+
+        while (temp > 0) {
+            count++;
+            temp = Math.floor( temp / 10);
+        }
+        
+        temp = i; 
+
+        while(temp > 0) {
+            let digit = temp % 10;
+            sum += digit ** count;
+            temp = Math.floor(temp / 10);
+        } 
+
+        if(sum === i) {
+            console.log(i);
+        }
+    }
+}
+
+armstrongNum();
