@@ -940,3 +940,14 @@ const armstrongNum = () => {
 }
 
 armstrongNum();
+
+// Q64: check if num is single digit or not
+const isSingleDigit = (num) => {
+    if(num >= -9 && num <= 9) {
+        return true;
+    }
+    return false;
+}
+
+console.log(isSingleDigit(4));
+console.log(isSingleDigit(42));
