@@ -951,3 +951,26 @@ const isSingleDigit = (num) => {
 
 console.log(isSingleDigit(4));
 console.log(isSingleDigit(42));
+
+
+// Q65; count vowels and consonants from a string
+const countVowelsAndConsonants = (str) => {
+    let char = str.toLowerCase();
+
+    let vowels = 0;
+    let consonants = 0;
+
+    for(let i = 0; i < char.length; i++) {
+        if ( "aeiou".includes(char[i]) ) {
+            vowels++;
+        } else if (char[i] !== " ") {
+            consonants++;
+        }
+    }
+
+   return { vowels: vowels, consonants: consonants };
+}
+
+console.log(countVowelsAndConsonants("helllo"));
+console.log(countVowelsAndConsonants("hello world"));
+
