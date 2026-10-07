@@ -974,3 +974,10 @@ const countVowelsAndConsonants = (str) => {
 console.log(countVowelsAndConsonants("helllo"));
 console.log(countVowelsAndConsonants("hello world"));
 
+
+// Q66: repeat a string n number of times
+const repeatString = (str, times) => {
+    return str.repeat(times);
+}
+
+console.log(repeatString("abc", 3)); //ababab
