@@ -981,3 +981,23 @@ const repeatString = (str, times) => {
 }
 
 console.log(repeatString("abc", 3)); //ababab
+
+// Q67: the first non-repeating character
+const firstNonRepeating = (str) => {
+    let count = {};
+
+    for(let char of str) {
+        count[char] = (count[char] || 0) + 1;
+    }
+
+    for(let char of str) {
+        if(count[char] === 1) {
+            return char;
+        }
+    }
+
+    return null;
+}
+
+console.log(firstNonRepeating("aabbcddee"));
+console.log(firstNonRepeating("swiss"));
