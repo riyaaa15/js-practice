@@ -1001,3 +1001,17 @@ const firstNonRepeating = (str) => {
 
 console.log(firstNonRepeating("aabbcddee"));
 console.log(firstNonRepeating("swiss"));
+
+//Q68: get initials from a full name
+const getInitials = (str) => {
+    let words = str.split(" ");
+    let result = "";
+
+    for (let i = 0; i < words.length; i++) {
+        result += words[i][0].toUpperCase();
+    }
+
+    return result;
+}
+
+console.log(getInitials("be happy!"));
