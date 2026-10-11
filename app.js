@@ -4,18 +4,15 @@
 const isEven = (num) => num % 2 === 0;
 console.log(isEven(4));
 
-
 // Q2: Check if a number is positive
 const isPositive = (num) => num > 0;
 console.log(isPositive(5));
-
 
 // Q3: Return the bigger of two numbers
 const getMax = (num1, num2) => {
     return Math.max(num1, num2);
 }
 console.log(getMax(3, 7));
-
 
 // Q4: Reverse a string
 const reverseString = (str) => {
@@ -27,13 +24,11 @@ const reverseString = (str) => {
 }
 console.log(reverseString("hello"));
 
-
 // Q5: Capitalize the first letter of a string
 const capitalizeFirst = (str) => {
     return str[0].toUpperCase() + str.slice(1);
 }
 console.log(capitalizeFirst("riya"));
-
 
 // Q6: Count vowels in a string
 const countVowels = (str) => {
@@ -47,7 +42,6 @@ const countVowels = (str) => {
 }
 console.log(countVowels("hello"));
 
-
 // Q7: Find the max number in an array
 const findMax = (arr) => {
     let maxNum = arr[0];
@@ -59,7 +53,6 @@ const findMax = (arr) => {
     return maxNum;
 }
 console.log(findMax([3, 7, 2, 9, 4]));
-
 
 // Q8: Find the min number in an array
 const findMin = (arr) => {
@@ -73,7 +66,6 @@ const findMin = (arr) => {
 }
 console.log(findMin([5, 2, 9, 1, 7]));
 
-
 // Q9: Count occurrences of a character in a string
 const countChar = (str, char) => {
     let count = 0;
@@ -86,13 +78,11 @@ const countChar = (str, char) => {
 }
 console.log(countChar("banana", "a"));
 
-
 // Q10: Check if a string is a palindrome
 const isPalindromeStr = (str) => {
     return str === str.split('').reverse().join('');
 }
 console.log(isPalindromeStr("madam"));
-
 
 // Q11: Sum all numbers in an array
 const sumArray = (arr) => {
@@ -104,7 +94,6 @@ const sumArray = (arr) => {
 }
 console.log(sumArray([1, 2, 3, 4]));
 
-
 // Q12: Multiply all numbers in an array
 const multiplyArray = (arr) => {
     let ans = 1;
@@ -115,13 +104,11 @@ const multiplyArray = (arr) => {
 }
 console.log(multiplyArray([1, 2, 3, 4]));
 
-
 // Q13: Remove duplicates from an array
 const removeDuplicates = (arr) => {
     return [...new Set(arr)];
 }
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
-
 
 // Q14: Calculate factorial of a number
 const factorial = (num) => {
@@ -134,13 +121,11 @@ const factorial = (num) => {
 }
 console.log(factorial(5));
 
-
 // Q15: Check if two strings are anagrams
 const isAnagram = (str1, str2) => {
     return str1.split('').sort().join('') === str2.split('').sort().join('');
 }
 console.log(isAnagram("listen", "silent"));
-
 
 // Q16: Count words in a sentence
 const countWords = (str) => {
@@ -148,14 +133,12 @@ const countWords = (str) => {
 }
 console.log(countWords("I love JavaScript"));
 
-
 // Q17: Check if all characters in a string are unique
 const getUniqueChars = (str) => {
     let uniqueSet = new Set(str.split(''));
     return str.length === uniqueSet.size;
 }
 console.log(getUniqueChars("abcdef"));
-
 
 // Q18: Find the sum of all even numbers in an array
 const sumOfEvenNumbers = (arr) => {
@@ -190,7 +173,6 @@ const secondLargest = (arr) => {
 }
 console.log(secondLargest([3, 7, 2, 9, 4]));
 
-
 // Q20: Flatten a deeply nested array
 const flattenArray = (arr) => {
     return arr.flat(Infinity);
@@ -206,7 +188,6 @@ const isSubstring = (str1, str2) => {
 
 console.log(isSubstring("hello world", "bye"));
 
-
 // Q22: Remove space from a string
 const removeSpace = (str) => {
     return str.split(" ").join("");
@@ -214,7 +195,6 @@ const removeSpace = (str) => {
 
 console.log(removeSpace("h e l l o"));
 console.log(removeSpace("i love js"));
-
 
 // Q23: capitalize first letter of every word in a sentence
 const capitalizeWords = (str) => {
@@ -951,7 +931,6 @@ const isSingleDigit = (num) => {
 
 console.log(isSingleDigit(4));
 console.log(isSingleDigit(42));
-
 
 // Q65; count vowels and consonants from a string
 const countVowelsAndConsonants = (str) => {
