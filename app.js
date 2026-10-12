@@ -1010,3 +1010,17 @@ const longestWord = (str) => {
 }
 
 console.log(longestWord("I love programming"));
+
+//Q70: Remove vowels from a string
+const removeVowels = (str) => {
+    let result = "";
+
+    for(let i = 0; i < str.length; i++) {
+        if(!isVowel(str[i])) {
+        result += str[i];
+       }
+    }
+    return result;
+}
+
+console.log(removeVowels("JavaScript"));
