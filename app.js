@@ -1024,3 +1024,20 @@ const removeVowels = (str) => {
 }
 
 console.log(removeVowels("JavaScript"));
+
+//Q71: Count words starting with a given letter
+function countWordsStartingWith(sentence, letter) {
+    let words = sentence.split(" ");
+    let count = 0;
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i][0].toLowerCase() === letter.toLowerCase()) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countWordsStartingWith("Be happy and brave", "b")); // 2
+console.log(countWordsStartingWith("I love JavaScript", "j"));  // 1
