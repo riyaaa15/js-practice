@@ -224,7 +224,6 @@ const sumRange = (start, end) => {
 
 console.log(sumRange(1, 5));
 
-
 // Q25: check if a character is a vowel
 const isVowel = (char) => {
     let letter = char.toLowerCase();
@@ -233,7 +232,6 @@ const isVowel = (char) => {
 }
 
 console.log(isVowel("U"));
-
 
 //Q26: convert array of strings to object with lengths as values
 const arrayToObject = (arr) => {
@@ -247,7 +245,6 @@ const arrayToObject = (arr) => {
 }
 
 console.log(arrayToObject(["cat", "elephant", "dog"]));
-
 
 //Q27: split array into chunks of given size
 const chunkArray = (arr, num) => {
@@ -263,7 +260,6 @@ const chunkArray = (arr, num) => {
 
 console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 2));
 
-
 //Q28: generate array of numbers within a range
 const range = (start, end) => {
     let arr = [];
@@ -277,7 +273,6 @@ const range = (start, end) => {
 
 console.log(range(3, 7));
 
-
 // Q29: convert sentence to title case
 const titleCase = (sentence) => {
      let words = sentence.split(" ");
@@ -290,7 +285,6 @@ const titleCase = (sentence) => {
 }
 
 console.log(titleCase("jAVAscript IS fun"));
-
 
 //  Q30: find most frequent character in a string
 const mostFrequentChar = (str) => {
@@ -321,7 +315,6 @@ const mostFrequentChar = (str) => {
 
 console.log(mostFrequentChar("banana"));
 
-
 // Q31: check if a year is a leap year
 const isLeapYear = (year) => {
     if(year % 400 === 0) {
@@ -339,7 +332,6 @@ console.log(isLeapYear(2000));
 console.log(isLeapYear(1900));   
 console.log(isLeapYear(2024));   
 console.log(isLeapYear(2028));
-
 
 // Q32: implement caesar cipher (letter shifting)
 const caesarCipher = (str, shift) => {
@@ -421,7 +413,6 @@ const sumEvenOneToTen = () => {
 }
 
 console.log(sumEvenOneToTen());
-
 
 // Q38: Sum of odd numbers b/w 1 to 10 (with tracing)
 const sumOddOneToTen = () => {
