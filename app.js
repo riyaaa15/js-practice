@@ -1032,3 +1032,13 @@ function countWordsStartingWith(sentence, letter) {
 
 console.log(countWordsStartingWith("Be happy and brave", "b")); // 2
 console.log(countWordsStartingWith("I love JavaScript", "j"));  // 1
+
+//Q72: find missing number
+function findMissing(arr) {
+  let n = arr.length + 1; 
+  let totalSum = (n * (n + 1)) / 2;
+  let arrSum = arr.reduce((acc, num) => acc + num, 0);
+  return totalSum - arrSum;
+}
+
+console.log(findMissing([1, 2, 4, 5, 6])); //3
