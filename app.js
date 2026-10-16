@@ -1042,3 +1042,20 @@ function findMissing(arr) {
 }
 
 console.log(findMissing([1, 2, 4, 5, 6])); //3
+
+//Q73: Swap the case of each letter in a string
+const swapCase = (str) => {
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+        if(str[i] === str[i].toUpperCase()) {
+            result += str[i].toLowerCase()
+        } else {
+             result += str[i].toUpperCase();
+        }
+    }
+
+    return result;
+}
+
+console.log(swapCase("Hello world"));
