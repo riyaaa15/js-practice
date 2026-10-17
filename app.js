@@ -1058,4 +1058,16 @@ const swapCase = (str) => {
     return result;
 }
 
-console.log(swapCase("Hello world"));
+console.log(swapCase("Hello World"));
+
+//Q74: check if an array is sorted in ascending order
+const isSorted = (arr) => {
+    for(let i = 0; i < arr.length-1; i++) {
+        if(arr[i] > arr[i + 1]) {
+            return false
+        }
+    }
+    return true;
+}
+
+console.log(isSorted([1, 3, 2, 5]));
