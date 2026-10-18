@@ -1071,3 +1071,17 @@ const isSorted = (arr) => {
 }
 
 console.log(isSorted([1, 3, 2, 5]));
+
+//Q75: check if all elements in an array are even
+const allEven = (arr) => {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] % 2 !== 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(allEven([2, 4, 6])) //false
+console.log(allEven([2, 3, 6])) //false
