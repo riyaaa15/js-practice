@@ -2,17 +2,17 @@
 
 // Q1: Check if a number is even
 const isEven = (num) => num % 2 === 0;
-console.log(isEven(4));
+console.log(isEven(4));  //true
 
 // Q2: Check if a number is positive
 const isPositive = (num) => num > 0;
-console.log(isPositive(5));
+console.log(isPositive(5));  //true
 
 // Q3: Return the bigger of two numbers
 const getMax = (num1, num2) => {
     return Math.max(num1, num2);
 }
-console.log(getMax(3, 7));
+console.log(getMax(3, 7));  //7
 
 // Q4: Reverse a string
 const reverseString = (str) => {
@@ -22,13 +22,13 @@ const reverseString = (str) => {
     }
     return reverseStr;
 }
-console.log(reverseString("hello"));
+console.log(reverseString("hello"));  //olleh
 
 // Q5: Capitalize the first letter of a string
 const capitalizeFirst = (str) => {
     return str[0].toUpperCase() + str.slice(1);
 }
-console.log(capitalizeFirst("riya"));
+console.log(capitalizeFirst("riya"));   //Riya
 
 // Q6: Count vowels in a string
 const countVowels = (str) => {
@@ -40,7 +40,7 @@ const countVowels = (str) => {
     }
     return "Total vowels = " + count;
 }
-console.log(countVowels("hello"));
+console.log(countVowels("hello"));   //Total Vowels = 2
 
 // Q7: Find the max number in an array
 const findMax = (arr) => {
@@ -52,7 +52,7 @@ const findMax = (arr) => {
     }
     return maxNum;
 }
-console.log(findMax([3, 7, 2, 9, 4]));
+console.log(findMax([3, 7, 2, 9, 4]));  //9
 
 // Q8: Find the min number in an array
 const findMin = (arr) => {
@@ -64,7 +64,7 @@ const findMin = (arr) => {
     }
     return minNum;
 }
-console.log(findMin([5, 2, 9, 1, 7]));
+console.log(findMin([5, 2, 9, 1, 7]));  //1
 
 // Q9: Count occurrences of a character in a string
 const countChar = (str, char) => {
@@ -76,13 +76,13 @@ const countChar = (str, char) => {
     }
     return count;
 }
-console.log(countChar("banana", "a"));
+console.log(countChar("banana", "a"));   //3
 
 // Q10: Check if a string is a palindrome
 const isPalindromeStr = (str) => {
     return str === str.split('').reverse().join('');
 }
-console.log(isPalindromeStr("madam"));
+console.log(isPalindromeStr("madam"));   //true
 
 // Q11: Sum all numbers in an array
 const sumArray = (arr) => {
@@ -92,7 +92,7 @@ const sumArray = (arr) => {
     }
     return sum;
 }
-console.log(sumArray([1, 2, 3, 4]));
+console.log(sumArray([1, 2, 3, 4]));   //10
 
 // Q12: Multiply all numbers in an array
 const multiplyArray = (arr) => {
@@ -102,13 +102,13 @@ const multiplyArray = (arr) => {
     }
     return ans;
 }
-console.log(multiplyArray([1, 2, 3, 4]));
+console.log(multiplyArray([1, 2, 3, 4]));  //24
 
 // Q13: Remove duplicates from an array
 const removeDuplicates = (arr) => {
     return [...new Set(arr)];
 }
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));  //[1,2,3,4,5]
 
 // Q14: Calculate factorial of a number
 const factorial = (num) => {
@@ -119,26 +119,26 @@ const factorial = (num) => {
     }
     return result;
 }
-console.log(factorial(5));
+console.log(factorial(5));   //120
 
 // Q15: Check if two strings are anagrams
 const isAnagram = (str1, str2) => {
     return str1.split('').sort().join('') === str2.split('').sort().join('');
 }
-console.log(isAnagram("listen", "silent"));
+console.log(isAnagram("listen", "silent"));   //true
 
 // Q16: Count words in a sentence
 const countWords = (str) => {
     return str.split(" ").length;
 }
-console.log(countWords("I love JavaScript"));
+console.log(countWords("I love JavaScript"));   //3
 
 // Q17: Check if all characters in a string are unique
 const getUniqueChars = (str) => {
     let uniqueSet = new Set(str.split(''));
     return str.length === uniqueSet.size;
 }
-console.log(getUniqueChars("abcdef"));
+console.log(getUniqueChars("abcdef"));  //true
 
 // Q18: Find the sum of all even numbers in an array
 const sumOfEvenNumbers = (arr) => {
@@ -152,8 +152,8 @@ const sumOfEvenNumbers = (arr) => {
      return count;
 }
 
-console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6]));
-console.log(sumOfEvenNumbers([1, 3, 5])); 
+console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6]));  //12
+console.log(sumOfEvenNumbers([1, 3, 5]));  //0 
 
 
 // Q19: Find the second largest number in an array
@@ -171,14 +171,14 @@ const secondLargest = (arr) => {
     }
     return secondMaxNum;
 }
-console.log(secondLargest([3, 7, 2, 9, 4]));
+console.log(secondLargest([3, 7, 2, 9, 4]));   //7
 
 // Q20: Flatten a deeply nested array
 const flattenArray = (arr) => {
     return arr.flat(Infinity);
 }
 
-console.log(flattenArray([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]));
+console.log(flattenArray([1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]));  //[1,2,3,4,5,6,7,8,9,10]
 
 
 // Q21: Check if one string contains another string
@@ -186,15 +186,15 @@ const isSubstring = (str1, str2) => {
     return str1.includes(str2);
 }
 
-console.log(isSubstring("hello world", "bye"));
+console.log(isSubstring("hello world", "bye"));   //false
 
 // Q22: Remove space from a string
 const removeSpace = (str) => {
     return str.split(" ").join("");
 }
 
-console.log(removeSpace("h e l l o"));
-console.log(removeSpace("i love js"));
+console.log(removeSpace("h e l l o"));   //hello
+console.log(removeSpace("i love js"));   //ilovejs
 
 // Q23: capitalize first letter of every word in a sentence
 const capitalizeWords = (str) => {
@@ -207,8 +207,8 @@ const capitalizeWords = (str) => {
     return words.join(" ");
 }
 
-console.log(capitalizeWords("hellop world"));
-console.log(capitalizeWords("i love js"));
+console.log(capitalizeWords("hello world"));  //Hello World
+console.log(capitalizeWords("i love js"));   //I Love Js
 
 
  // Q24: sum of numbers within a range
@@ -222,7 +222,7 @@ const sumRange = (start, end) => {
      return result;
 }
 
-console.log(sumRange(1, 5));
+console.log(sumRange(1, 5));   //15
 
 // Q25: check if a character is a vowel
 const isVowel = (char) => {
@@ -231,7 +231,7 @@ const isVowel = (char) => {
     return ("aeiou".includes(letter));
 }
 
-console.log(isVowel("U"));
+console.log(isVowel("U"));   //true
 
 //Q26: convert array of strings to object with lengths as values
 const arrayToObject = (arr) => {
@@ -244,7 +244,7 @@ const arrayToObject = (arr) => {
     return obj;
 }
 
-console.log(arrayToObject(["cat", "elephant", "dog"]));
+console.log(arrayToObject(["cat", "elephant", "dog"]));  // {cat" 3, elephant: 8, dog: 3}
 
 //Q27: split array into chunks of given size
 const chunkArray = (arr, num) => {
@@ -271,7 +271,7 @@ const range = (start, end) => {
     return arr;
 }
 
-console.log(range(3, 7));
+console.log(range(3, 7));  //[3,4,5,6,7]
 
 // Q29: convert sentence to title case
 const titleCase = (sentence) => {
@@ -284,7 +284,7 @@ const titleCase = (sentence) => {
     return words.join(" ");
 }
 
-console.log(titleCase("jAVAscript IS fun"));
+console.log(titleCase("jAVAscript IS fun"));   //Javascript Is Fun
 
 //  Q30: find most frequent character in a string
 const mostFrequentChar = (str) => {
