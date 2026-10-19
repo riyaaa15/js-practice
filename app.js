@@ -1085,3 +1085,18 @@ const allEven = (arr) => {
 
 console.log(allEven([2, 4, 6])) //false
 console.log(allEven([2, 3, 6])) //false
+
+//Q76: find the index of a value in an array
+const findIndex = (arr, targetVal) => {
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === targetVal) {
+            return i;
+        }
+
+    }
+
+    return -1;
+}
+
+console.log(findIndex([10, 20, 30, 40], 30)); //2
+console.log(findIndex([10, 20, 30, 40], 99));   // -1
