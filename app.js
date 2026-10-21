@@ -1023,3 +1023,19 @@ const findIndex = (arr, targetVal) => {
 }
 console.log(findIndex([10, 20, 30, 40], 30));  // 2
 console.log(findIndex([10, 20, 30, 40], 99));  // -1
+
+// Q77: Find the First Repeated Character
+const findRepeated = (str) => {
+    for (let i = 0; i < str.length; i++) {
+        for (let j = i + 1; j < str.length; j++) {
+            if (str[i] === str[j]) {
+                return str[i];
+            }
+        }
+    }
+    return "No repeated character";
+};
+
+console.log(findRepeated("hello"));   // l
+console.log(findRepeated("program")); // r
+console.log(findRepeated("abcde"));   // No repeated character
