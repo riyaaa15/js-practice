@@ -1039,3 +1039,20 @@ const findRepeated = (str) => {
 console.log(findRepeated("hello"));   // l
 console.log(findRepeated("program")); // r
 console.log(findRepeated("abcde"));   // No repeated character
+ 
+// Q78: count how many times a value appears in an array
+const countOccurrences = (arr, target) => {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countOccurrences([1, 2, 2, 3, 2], 2));    // 3
+console.log(countOccurrences(["a", "b", "a"], "a"));  // 2
+console.log(countOccurrences([1, 2, 3], 9));          // 0
