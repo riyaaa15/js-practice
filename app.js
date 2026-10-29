@@ -1056,3 +1056,22 @@ const countOccurrences = (arr, target) => {
 console.log(countOccurrences([1, 2, 2, 3, 2], 2));    // 3
 console.log(countOccurrences(["a", "b", "a"], "a"));  // 2
 console.log(countOccurrences([1, 2, 3], 9));          // 0
+
+// Q79: reverse the order of words in a sentence
+const reverseWords = (str) => {
+    let words = str.split(" ");
+    let result = "";
+
+    for (let i = words.length - 1; i >= 0; i--) {
+        result += words[i];
+        if (i !== 0) {
+            result += " ";
+        }
+    }
+
+    return result;
+}
+
+console.log(reverseWords("I love JavaScript"));  // JavaScript love I
+console.log(reverseWords("be happy"));           // happy be
+console.log(reverseWords("hello"));              // hello
