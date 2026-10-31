@@ -1092,3 +1092,23 @@ const commonElements = (arr1, arr2) => {
 console.log(commonElements([1, 2, 3, 4], [3, 4, 5, 6]));  // [3, 4]
 console.log(commonElements([1, 2, 2, 3], [2, 2, 3]));     // [2, 3]
 console.log(commonElements([1, 2], [3, 4]));              // []
+
+//Q81: find the second smallest number in an array
+const secondSmallest = (arr) => {
+    let smallNum = arr[0];
+    let secondSmallNum = Infinity;
+
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] < smallNum) {
+            secondSmallNum = smallNum;
+            smallNum = arr[i]
+        } else if(arr[i] < secondSmallNum && arr[i] !== smallNum) {
+            secondSmallNum = arr[i];
+        }
+        
+    }
+
+    return secondSmallNum;
+}
+
+console.log(secondSmallest([2, 5, 6, 9, 8])); //5
