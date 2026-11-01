@@ -1112,3 +1112,12 @@ const secondSmallest = (arr) => {
 }
 
 console.log(secondSmallest([2, 5, 6, 9, 8])); //5
+
+// Q82: check if a sentence is a palindrome
+const isPalindromeSentence = (str) => {
+    let cleaned = str.toLowerCase().split(" ").join("");
+    return cleaned === cleaned.split('').reverse().join('');
+}
+
+console.log(isPalindromeSentence("Nurses Run")); //true
+console.log(isPalindromeSentence("hello world"));  // false
