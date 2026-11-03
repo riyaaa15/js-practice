@@ -1037,7 +1037,6 @@ const findRepeated = (str) => {
 };
 
 console.log(findRepeated("hello"));   // l
-console.log(findRepeated("program")); // r
 console.log(findRepeated("abcde"));   // No repeated character
  
 // Q78: count how many times a value appears in an array
@@ -1073,8 +1072,6 @@ const reverseWords = (str) => {
 }
 
 console.log(reverseWords("I love JavaScript"));  // JavaScript love I
-console.log(reverseWords("be happy"));           // happy be
-console.log(reverseWords("hello"));              // hello
 
 // Q80: find common elements between two arrays
 const commonElements = (arr1, arr2) => {
@@ -1090,7 +1087,6 @@ const commonElements = (arr1, arr2) => {
 }
 
 console.log(commonElements([1, 2, 3, 4], [3, 4, 5, 6]));  // [3, 4]
-console.log(commonElements([1, 2, 2, 3], [2, 2, 3]));     // [2, 3]
 console.log(commonElements([1, 2], [3, 4]));              // []
 
 //Q81: find the second smallest number in an array
