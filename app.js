@@ -1118,7 +1118,7 @@ const isPalindromeSentence = (str) => {
 console.log(isPalindromeSentence("Nurses Run")); //true
 console.log(isPalindromeSentence("hello world"));  // false
 
-// Q83: 
+// Q83: remove duplicate characters from a string
 const removeDuplicatesChars = (str) => {
     let result = "";
 
@@ -1131,5 +1131,5 @@ const removeDuplicatesChars = (str) => {
     return result;
 }
 
-console.log(removeDuplicatesChars("aaabccdde")); 
-console.log(removeDuplicatesChars("programming"));
+console.log(removeDuplicatesChars("aaabccdde")); //abcde
+console.log(removeDuplicatesChars("programming")); //progamin
