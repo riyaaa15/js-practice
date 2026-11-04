@@ -1117,3 +1117,19 @@ const isPalindromeSentence = (str) => {
 
 console.log(isPalindromeSentence("Nurses Run")); //true
 console.log(isPalindromeSentence("hello world"));  // false
+
+// Q83: 
+const removeDuplicatesChars = (str) => {
+    let result = "";
+
+    for(let i=0; i < str.length; i++) {
+        if(!result.includes(str[i])) {
+            result += str[i]
+        } 
+    }
+
+    return result;
+}
+
+console.log(removeDuplicatesChars("aaabccdde")); 
+console.log(removeDuplicatesChars("programming"));
