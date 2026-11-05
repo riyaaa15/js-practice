@@ -1133,3 +1133,18 @@ const removeDuplicatesChars = (str) => {
 
 console.log(removeDuplicatesChars("aaabccdde")); //abcde
 console.log(removeDuplicatesChars("programming")); //progamin
+
+// Q84:  check if an array has a pair with a given sum
+const hasPairWithSum = (arr, targetVal) => {
+    for(let i = 0; i < arr.length; i++) {
+        for(let j = i + 1; j < arr.length; j++) {
+            if(arr[i] + arr[j] === targetVal) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+console.log(hasPairWithSum([1, 2, 3, 6, 8], 10))
