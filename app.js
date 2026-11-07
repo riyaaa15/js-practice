@@ -1147,4 +1147,23 @@ const hasPairWithSum = (arr, targetVal) => {
     return false;
 }
 
-console.log(hasPairWithSum([1, 2, 3, 6, 8], 10))
+console.log(hasPairWithSum([1, 2, 3, 6, 8], 10));
+
+// Q85: count the frequency of each word in a sentence
+const countWordFrequency = (str) => {
+    let words = str.toLowerCase().split(" ");
+    let freq = {};
+
+    for(let i = 0; i< words.length; i++) {
+        let word = words[i];
+        if(freq[word]) {
+            freq[word] = freq[word] + 1;
+        } else {
+            freq[word] = 1;
+        }
+    }
+
+    return freq;
+}
+
+console.log(countWordFrequency("the car and The dog and the bird")); // { the: 3, cat: 1, and: 2, dog: 1, bird: 1 }
