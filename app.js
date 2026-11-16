@@ -1180,3 +1180,22 @@ const rotateArray = (arr, k) => {
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
 console.log(rotateArray([1, 2, 3], 0)); // [1, 2, 3]
 console.log(rotateArray([1, 2, 3], 1)); // [3, 1, 2]
+
+// Q87:separate even and odd numbers
+const separateEvenOdd = (arr) => {
+    let even = [];
+    let odd = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        } else {
+            odd.push(arr[i]);
+        }
+    }
+
+    return { even, odd };
+};
+
+console.log(separateEvenOdd([1, 2, 3, 4, 5, 6]));
+console.log(separateEvenOdd([7, 9]));
