@@ -1183,19 +1183,40 @@ console.log(rotateArray([1, 2, 3], 1)); // [3, 1, 2]
 
 // Q87:separate even and odd numbers
 const separateEvenOdd = (arr) => {
-    let even = [];
-    let odd = [];
+  let even = [];
+  let odd = [];
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            even.push(arr[i]);
-        } else {
-            odd.push(arr[i]);
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      even.push(arr[i]);
+    } else {
+      odd.push(arr[i]);
     }
+  }
 
-    return { even, odd };
+  return { even, odd };
 };
 
 console.log(separateEvenOdd([1, 2, 3, 4, 5, 6]));
 console.log(separateEvenOdd([7, 9]));
+
+// Q88: group words by their length
+const groupByLength = (arr) => {
+  let obj = {};
+
+  for(let i = 0; i < arr.length; i++) {
+    let word = arr[i];
+    let len = word.length;
+
+    if(!obj[len]) {
+      obj[len] = [];
+    }
+
+     obj[len].push(word);
+  }
+
+  return obj;
+}
+
+console.log(groupByLength(["cat", "dog", "bird", "fish", "ox"])); 
+//{ 2: ["ox"], 3: ["cat", "dog"], 4: ["bird", "fish"] }
