@@ -1179,7 +1179,6 @@ const rotateArray = (arr, k) => {
 
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
 console.log(rotateArray([1, 2, 3], 0)); // [1, 2, 3]
-console.log(rotateArray([1, 2, 3], 1)); // [3, 1, 2]
 
 // Q87:separate even and odd numbers
 const separateEvenOdd = (arr) => {
@@ -1211,7 +1210,6 @@ const groupByLength = (arr) => {
     if(!obj[len]) {
       obj[len] = [];
     }
-
      obj[len].push(word);
   }
 
