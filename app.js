@@ -1218,3 +1218,21 @@ const groupByLength = (arr) => {
 
 console.log(groupByLength(["cat", "dog", "bird", "fish", "ox"])); 
 //{ 2: ["ox"], 3: ["cat", "dog"], 4: ["bird", "fish"] }
+
+// Q89: debugging - sum of odd numbers in an array
+// Bugs fixed: (1) initial value of sum was 1, changed to 0
+//             (2) loop used i <= arr.length, changed to i < arr.length
+const sumOfOdd = (arr) => {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            sum += arr[i];
+        }
+    }
+
+    return sum;
+}
+
+console.log(sumOfOdd([1, 2, 3, 4, 5]));  // 9
+console.log(sumOfOdd([2, 4]));           // 0
