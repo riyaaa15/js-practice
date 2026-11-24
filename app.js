@@ -1236,3 +1236,18 @@ const sumOfOdd = (arr) => {
 
 console.log(sumOfOdd([1, 2, 3, 4, 5]));  // 9
 console.log(sumOfOdd([2, 4]));           // 0
+
+
+const countLongWords = (sentence, n) => {
+    let words = sentence.split(" ");
+    let count = 0;
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length > n) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
