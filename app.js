@@ -1237,7 +1237,9 @@ const sumOfOdd = (arr) => {
 console.log(sumOfOdd([1, 2, 3, 4, 5]));  // 9
 console.log(sumOfOdd([2, 4]));           // 0
 
-
+// Q90: debugging - count words longer than n in a sentence
+// Bugs fixed: (1) split("") changed to split(" ") to separate words
+//             (2) return count was inside the loop, moved outside
 const countLongWords = (sentence, n) => {
     let words = sentence.split(" ");
     let count = 0;
@@ -1251,3 +1253,6 @@ const countLongWords = (sentence, n) => {
     return count;
 }
 
+console.log(countLongWords("I love programming a lot", 3));  // 2
+console.log(countLongWords("JavaScript is very interesting", 4));  // 2
+console.log(countLongWords("I am learning JS", 5));  // 0
