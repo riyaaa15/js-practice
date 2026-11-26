@@ -1203,56 +1203,84 @@ console.log(separateEvenOdd([7, 9]));
 const groupByLength = (arr) => {
   let obj = {};
 
-  for(let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     let word = arr[i];
     let len = word.length;
 
-    if(!obj[len]) {
+    if (!obj[len]) {
       obj[len] = [];
     }
-     obj[len].push(word);
+    obj[len].push(word);
   }
 
   return obj;
-}
+};
 
-console.log(groupByLength(["cat", "dog", "bird", "fish", "ox"])); 
+console.log(groupByLength(["cat", "dog", "bird", "fish", "ox"]));
 //{ 2: ["ox"], 3: ["cat", "dog"], 4: ["bird", "fish"] }
 
 // Q89: debugging - sum of odd numbers in an array
 // Bugs fixed: (1) initial value of sum was 1, changed to 0
 //             (2) loop used i <= arr.length, changed to i < arr.length
 const sumOfOdd = (arr) => {
-    let sum = 0;
+  let sum = 0;
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 !== 0) {
-            sum += arr[i];
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      sum += arr[i];
     }
+  }
 
-    return sum;
-}
+  return sum;
+};
 
-console.log(sumOfOdd([1, 2, 3, 4, 5]));  // 9
-console.log(sumOfOdd([2, 4]));           // 0
+console.log(sumOfOdd([1, 2, 3, 4, 5])); // 9
+console.log(sumOfOdd([2, 4])); // 0
 
 // Q90: debugging - count words longer than n in a sentence
 // Bugs fixed: (1) split("") changed to split(" ") to separate words
 //             (2) return count was inside the loop, moved outside
 const countLongWords = (sentence, n) => {
-    let words = sentence.split(" ");
-    let count = 0;
+  let words = sentence.split(" ");
+  let count = 0;
 
-    for (let i = 0; i < words.length; i++) {
-        if (words[i].length > n) {
-            count++;
-        }
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > n) {
+      count++;
     }
+  }
 
-    return count;
-}
+  return count;
+};
 
-console.log(countLongWords("I love programming a lot", 3));  // 2
-console.log(countLongWords("JavaScript is very interesting", 4));  // 2
-console.log(countLongWords("I am learning JS", 5));  // 0
+console.log(countLongWords("I love programming a lot", 3)); // 2
+console.log(countLongWords("JavaScript is very interesting", 4)); // 2
+console.log(countLongWords("I am learning JS", 5)); // 1
+
+// Q91:validate a password (length, digit and uppercase checks)
+const isValidPassword = (str) => {
+  let hasDigit = false;
+  let hasUpper = false;
+
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+
+    if ("0123456789".includes(char)) {
+      hasDigit = true;
+    }
+    if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+      hasUpper = true;
+    }
+  }
+
+  if (str.length >= 8 && hasDigit && hasUpper) {
+    return true;
+  }
+
+  return false;
+};
+
+console.log(isValidPassword("Hello123"));      // true
+console.log(isValidPassword("hello123"));      // false
+console.log(isValidPassword("Hello1234567"));  // true
+console.log(isValidPassword("HELLOWORLD"));    // false
