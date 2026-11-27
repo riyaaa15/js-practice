@@ -1280,7 +1280,35 @@ const isValidPassword = (str) => {
   return false;
 };
 
-console.log(isValidPassword("Hello123"));      // true
-console.log(isValidPassword("hello123"));      // false
-console.log(isValidPassword("Hello1234567"));  // true
-console.log(isValidPassword("HELLOWORLD"));    // false
+console.log(isValidPassword("Hello123")); // true
+console.log(isValidPassword("hello123")); // false
+console.log(isValidPassword("Hello1234567")); // true
+console.log(isValidPassword("HELLOWORLD")); // false
+
+// Q92:  find duplicate elements in an arra
+const findDuplicates = (arr) => {
+  let freq = {};
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+
+    if (freq[item]) {
+      freq[item] = freq[item] + 1;
+    } else {
+      freq[item] = 1;
+    }
+  }
+
+  for (let key in freq) {
+    if (freq[key] > 1) {
+      result.push(key);
+    }
+  }
+
+  return result;
+};
+
+console.log(findDuplicates([1, 2, 3, 2, 4, 3, 2]));  // ["2", "3"]
+console.log(findDuplicates(["a", "b", "a"]));        // ["a"]
+console.log(findDuplicates([1, 2, 3])); // []
